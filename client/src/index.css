@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow p-4;
+  }
+
+  .input {
+    @apply block w-full px-3 py-2 border border-neutral-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+  
+  .chat-bubble-user {
+    @apply px-4 py-3 rounded-lg max-w-[85%] bg-primary-100 text-neutral-800 ml-auto;
+  }
+  
+  .chat-bubble-assistant {
+    @apply px-4 py-3 rounded-lg max-w-[85%] bg-white border border-neutral-200 text-neutral-800;
+  }
+}
